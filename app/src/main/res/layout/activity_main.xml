@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.nintendoquizapp.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioGroup
+        android:id="@+id/group_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+            <!--http://1000logos.net/wp-content/uploads/2017/03/Nintendo-Logo.png, 06/14/2018 -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_1_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_1_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p0" />
+
+            <TextView
+                android:id="@+id/group_1_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_welcome"
+                android:textColor="#f44336"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_1_text_2"
+                app:layout_constraintTop_toBottomOf="@id/logo" />
+
+            <TextView
+                android:id="@+id/group_1_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_question"
+                android:textColor="#f44336"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintTop_toBottomOf="@id/group_1_text_1"
+                app:layout_constraintBottom_toTopOf="@id/group_1_button_1"/>
+
+            <RadioButton
+                android:id="@+id/group_1_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_button_1_text"
+                android:textColor="#f44336"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintTop_toBottomOf="@id/group_1_text_2"
+                app:layout_constraintBottom_toTopOf="@id/group_1_button_2"/>
+
+            <RadioButton
+                android:id="@+id/group_1_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_button_2_text"
+                android:textColor="#f44336"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintTop_toBottomOf="@id/group_1_button_1"
+                app:layout_constraintBottom_toTopOf="@id/group_1_button_3"/>
+
+            <RadioButton
+                android:id="@+id/group_1_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_button_3_text"
+                android:textColor="#f44336"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_1_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_1_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_1_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="@string/group_1_button_4_text"
+                android:textColor="#f44336"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/cards"
+                app:layout_constraintTop_toBottomOf="@id/group_1_button_3" />
+
+            <!--https://www.ebay.com/itm/R02-76-New-Club-Nintendo-Japan-
+            Super-Mario-Hanafuda-Japanese-Playing-Card-Black-/171797020028, 06/14/2018 -->
+            <ImageView
+                android:id="@+id/cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+
+                android:contentDescription="@string/group_1_pic_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_1_button_4"
+                app:srcCompat="@drawable/p1" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_1" />
+
+        <RadioGroup
+            android:id="@+id/group_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f44336"
+
+            app:layout_constraintTop_toBottomOf="@id/divider1">
+
+            <!--https://kotaku.com/5719971/ever-wonder-how-the-nintendo-zapper-light-gun-worked, 06/14/2018-->
+            <ImageView
+                android:id="@+id/red_zapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_2_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_2_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p2" />
+
+
+            <TextView
+                android:id="@+id/group_2_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_2_question"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_2_button_1"
+                app:layout_constraintTop_toBottomOf="@id/red_zapper" />
+
+            <RadioButton
+                android:id="@+id/group_2_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_2_button_1_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_2_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_2_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_2_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_2_button_2_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_2_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_2_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_2_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_2_button_3_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_2_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_2_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_2_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_2_button_4_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/grey_zapper"
+                app:layout_constraintTop_toBottomOf="@id/group_2_button_3" />
+
+            <!--http://www.digitalspy.com/gaming/feature/a673915/12-best-and-
+            worst-gaming-light-guns-from-duck-hunts-nes-zapper-to-the-sega-menacer/, 06/14/2018-->
+            <ImageView
+                android:id="@+id/grey_zapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+
+                android:contentDescription="@string/group_2_pic_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_2_button_4"
+                app:srcCompat="@drawable/p2a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_2" />
+
+        <RadioGroup
+            android:id="@+id/group_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffeb3b"
+
+            app:layout_constraintTop_toBottomOf="@id/divider2">
+
+            <!--http://www.warpedfactor.com/2015/08/video-game-firsts-magnavox-odyssey.html, 06/16/2018-->
+            <ImageView
+                android:id="@+id/odyssey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_3_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_3_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p3" />
+
+
+            <TextView
+                android:id="@+id/group_3_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_3_question"
+                android:textColor="#4caf50"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_3_button_1"
+                app:layout_constraintTop_toBottomOf="@id/odyssey" />
+
+            <RadioButton
+                android:id="@+id/group_3_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_3_button_1_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_3_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_3_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_3_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_3_button_2_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_3_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_3_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_3_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_3_button_3_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_3_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_3_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_3_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_3_button_4_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/black_white_odyssey"
+                app:layout_constraintTop_toBottomOf="@id/group_3_button_3" />
+
+            <!--http://www.magnavox-odyssey.com/, 06/16/2018-->
+            <ImageView
+                android:id="@+id/black_white_odyssey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_3_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_3_button_4"
+                app:srcCompat="@drawable/p3a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_3" />
+
+        <LinearLayout
+            android:id="@+id/check_group_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#00ffff"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3">
+
+            <!--https://en.wikipedia.org/wiki/Game_%26_Watch, 06/17/2018-->
+            <ImageView
+                android:id="@+id/game_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/check_group_4_pic_1"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p4" />
+
+            <TextView
+                android:id="@+id/check_group_4_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/check_group_4_question"
+                android:textColor="#ffeb3b"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/check_group_4_box_1"
+                app:layout_constraintTop_toBottomOf="@id/game_watch" />
+
+            <CheckBox
+                android:id="@+id/check_group_4_box_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/check_group_4_box_1_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/check_group_4_box_2"
+                app:layout_constraintTop_toBottomOf="@id/check_group_4_text_1" />
+
+            <CheckBox
+                android:id="@+id/check_group_4_box_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/check_group_4_box_2_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/check_group_4_box_3"
+                app:layout_constraintTop_toBottomOf="@id/check_group_4_box_1" />
+
+            <CheckBox
+                android:id="@+id/check_group_4_box_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/check_group_4_box_3_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/check_group_4_box_4"
+                app:layout_constraintTop_toBottomOf="@id/check_group_4_box_2" />
+
+            <CheckBox
+                android:id="@+id/check_group_4_box_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/check_group_4_box_4_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/black_white_odyssey"
+                app:layout_constraintTop_toBottomOf="@id/check_group_4_box_3" />
+
+            <!--https://en.wikipedia.org/wiki/Game_%26_Watch, 06/17/2018-->
+            <ImageView
+                android:id="@+id/game_watch_multi_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/check_group_4_pic_2"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_group_4_box_4"
+                app:srcCompat="@drawable/p4a" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_group_4" />
+
+        <RadioGroup
+            android:id="@+id/group_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4caf50"
+
+            app:layout_constraintTop_toBottomOf="@id/divider4">
+
+            <!--http://8bitplus.co.uk/projects/famicom-av-mod-nintendo/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/famicom_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_5_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_5_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p5" />
+
+
+            <TextView
+                android:id="@+id/group_5_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_5_question"
+                android:textColor="#00ffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_5_button_1"
+                app:layout_constraintTop_toBottomOf="@id/famicom_1" />
+
+            <RadioButton
+                android:id="@+id/group_5_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_5_button_1_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_5_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_5_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_5_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_5_button_2_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_5_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_5_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_5_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_5_button_3_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_5_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_5_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_5_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_5_button_4_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/famicom_2"
+                app:layout_constraintTop_toBottomOf="@id/group_5_button_3" />
+
+            <!--https://ancientelectronics.files.wordpress.com/2013/02/nintendo-famicom-disk-system.jpg, 06/17/2018-->
+            <ImageView
+                android:id="@+id/famicom_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_5_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_5_button_4"
+                app:srcCompat="@drawable/p5a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_5" />
+
+        <LinearLayout
+            android:id="@+id/text_group_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider5">
+
+            <!--https://www.thegamer.com/what-nintendont-15-reasons-sega-genesis-is-still-better-than-super-nintendo/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/sega_vs_nintendo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_6_pic_1"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/group_6_text_1"
+                app:srcCompat="@drawable/p6" />
+
+            <TextView
+                android:id="@+id/group_6_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_6_question"
+                android:textColor="#f44336"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_6_edit_text_1"
+                app:layout_constraintTop_toBottomOf="@id/sega_vs_nintendo" />
+
+            <EditText
+                android:id="@+id/group_6_edit_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:padding="4dp"
+                android:textColor="#f44336"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/sega"
+                app:layout_constraintTop_toBottomOf="@id/group_6_text_1" />
+
+            <!--https://jjteam.deviantart.com/art/SEGA-logo-remix-38696074, 06/17/2018-->
+            <ImageView
+                android:id="@+id/sega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_6_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_6_text_1"
+                app:srcCompat="@drawable/p6a" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_group_6" />
+
+        <RadioGroup
+            android:id="@+id/group_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f44336"
+
+            app:layout_constraintTop_toBottomOf="@id/divider6">
+
+            <!--https://hhhhappy.com/console-modifier-ben-heck-recreates-the-nintendo-playstation/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/sony_playstation_prototype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_7_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_7_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p7" />
+
+
+            <TextView
+                android:id="@+id/group_7_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_7_question"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_7_button_1"
+                app:layout_constraintTop_toBottomOf="@id/sony_playstation_prototype" />
+
+            <RadioButton
+                android:id="@+id/group_7_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_7_button_1_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_7_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_7_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_7_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_7_button_2_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_7_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_7_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_7_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_7_button_3_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_7_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_7_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_7_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_7_button_4_text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/snes_cd"
+                app:layout_constraintTop_toBottomOf="@id/group_7_button_3" />
+
+            <!--http://dot-invasion.com/dinv/portfolio/super_nintendo_cd.html, 06/17/2018-->
+            <ImageView
+                android:id="@+id/snes_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_7_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_7_button_4"
+                app:srcCompat="@drawable/p7a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_7" />
+
+        <RadioGroup
+            android:id="@+id/group_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffeb3b"
+
+            app:layout_constraintTop_toBottomOf="@id/divider7">
+
+            <!--https://www.giantbomb.com/virtual-boy/3045-79/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/virtual_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_8_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_8_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p8" />
+
+
+            <TextView
+                android:id="@+id/group_8_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_8_question"
+                android:textColor="#4caf50"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_8_button_1"
+                app:layout_constraintTop_toBottomOf="@id/virtual_boy" />
+
+            <RadioButton
+                android:id="@+id/group_8_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_8_button_1_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_8_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_8_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_8_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_8_button_2_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_8_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_8_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_8_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_8_button_3_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_8_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_8_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_8_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_8_button_4_text"
+                android:textColor="#4caf50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/virtual_boy_wario"
+                app:layout_constraintTop_toBottomOf="@id/group_8_button_3" />
+
+            <!--https://warosu.org/vr/image/fppuw-i1iiTb2emLcJXx9g, 06/17/2018-->
+            <ImageView
+                android:id="@+id/virtual_boy_wario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_8_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_8_button_4"
+                app:srcCompat="@drawable/p8a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_8" />
+
+        <RadioGroup
+            android:id="@+id/group_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffff "
+
+            app:layout_constraintTop_toBottomOf="@id/divider8">
+
+            <!--http://img.gawkerassets.com/img/17l6jfct37zh2jpg/original.jpg, 06/17/2018-->
+            <ImageView
+                android:id="@+id/colored_3ds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_9_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_9_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p9" />
+
+
+            <TextView
+                android:id="@+id/group_9_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_9_question"
+                android:textColor="#ffeb3b"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_9_button_1"
+                app:layout_constraintTop_toBottomOf="@id/colored_3ds" />
+
+            <RadioButton
+                android:id="@+id/group_9_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_9_button_1_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_9_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_9_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_9_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_9_button_2_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_9_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_9_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_9_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_9_button_3_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_9_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_9_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_9_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_9_button_4_text"
+                android:textColor="#ffeb3b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/zelda_3ds"
+                app:layout_constraintTop_toBottomOf="@id/group_9_button_3" />
+
+            <!--https://www.ebay.com/itm/Legend-of-Zelda-Special-Edition-Black-Gold-
+            Skin-Decal-NEW-Nintendo-3DS-XL-2015-/191724456033, 06/17/2018-->
+            <ImageView
+                android:id="@+id/zelda_3ds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_9_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_9_button_4"
+                app:srcCompat="@drawable/p9a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_9" />
+
+        <RadioGroup
+            android:id="@+id/group_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4caf50"
+
+            app:layout_constraintTop_toBottomOf="@id/divider9">
+
+            <!--https://www.kotaku.com.au/2016/10/the-nintendo-switch-dog-brought-to-life/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/switch_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_10_pic_1"
+
+                app:layout_constraintBottom_toTopOf="@+id/group_10_text_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/p10" />
+
+
+            <TextView
+                android:id="@+id/group_10_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_10_question"
+                android:textColor="#00ffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_10_button_1"
+                app:layout_constraintTop_toBottomOf="@id/switch_dog" />
+
+            <RadioButton
+                android:id="@+id/group_10_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_10_button_1_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_10_button_2"
+                app:layout_constraintTop_toBottomOf="@id/group_10_text_1" />
+
+            <RadioButton
+                android:id="@+id/group_10_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_10_button_2_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_10_button_3"
+                app:layout_constraintTop_toBottomOf="@id/group_10_button_1" />
+
+            <RadioButton
+                android:id="@+id/group_10_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_10_button_3_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/group_10_button_4"
+                app:layout_constraintTop_toBottomOf="@id/group_10_button_2" />
+
+            <RadioButton
+                android:id="@+id/group_10_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:text="@string/group_10_button_4_text"
+                android:textColor="#00ffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/switch_wallpaper"
+                app:layout_constraintTop_toBottomOf="@id/group_10_button_3" />
+
+            <!--http://nintendotoday.com/minimalist-nintendo-switch-wallpaper/, 06/17/2018-->
+            <ImageView
+                android:id="@+id/switch_wallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/group_10_pic_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group_10_button_4"
+                app:srcCompat="@drawable/p10a" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/group_10" />
+
+        <Button
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="#ffffff"
+            android:padding="4dp"
+            android:text="@string/total_score"
+            android:textColor="#D50000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider10" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

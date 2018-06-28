@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/b1.jpg" />
+        <ignore path="src/main/res/drawable/b10.jpg" />
+        <ignore path="src/main/res/drawable/b2.jpg" />
+        <ignore path="src/main/res/drawable/b3.jpg" />
+        <ignore path="src/main/res/drawable/b4.jpg" />
+        <ignore path="src/main/res/drawable/b5.jpg" />
+        <ignore path="src/main/res/drawable/b6.jpg" />
+        <ignore path="src/main/res/drawable/b7.jpg" />
+        <ignore path="src/main/res/drawable/b8.jpg" />
+        <ignore path="src/main/res/drawable/b9.jpg" />
+        <ignore path="src/main/res/drawable/p0.png" />
+        <ignore path="src/main/res/drawable/p1.jpg" />
+        <ignore path="src/main/res/drawable/p10.jpg" />
+        <ignore path="src/main/res/drawable/p10a.jpg" />
+        <ignore path="src/main/res/drawable/p2.jpg" />
+        <ignore path="src/main/res/drawable/p2a.jpg" />
+        <ignore path="src/main/res/drawable/p3.jpg" />
+        <ignore path="src/main/res/drawable/p3a.jpg" />
+        <ignore path="src/main/res/drawable/p4.png" />
+        <ignore path="src/main/res/drawable/p4a.png" />
+        <ignore path="src/main/res/drawable/p5.jpg" />
+        <ignore path="src/main/res/drawable/p5a.jpg" />
+        <ignore path="src/main/res/drawable/p6.jpg" />
+        <ignore path="src/main/res/drawable/p6a.jpg" />
+        <ignore path="src/main/res/drawable/p7.jpg" />
+        <ignore path="src/main/res/drawable/p7a.jpg" />
+        <ignore path="src/main/res/drawable/p8.jpg" />
+        <ignore path="src/main/res/drawable/p8a.jpg" />
+        <ignore path="src/main/res/drawable/p9.jpg" />
+        <ignore path="src/main/res/drawable/p9a.jpg" />
+    </issue>
+</lint>
