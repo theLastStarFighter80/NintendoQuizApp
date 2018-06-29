@@ -91,13 +91,14 @@ public class MainActivity extends AppCompatActivity
                 //checkbox checks
                 boolean box_one_is_checked = box_one.isChecked();
                 boolean box_two_is_checked = box_two.isChecked();
+                boolean box_three_is_Checked = box_three.isChecked()
                 boolean box_four_is_checked = box_four.isChecked();
 
-                if(box_one_is_checked || box_two_is_checked || box_four_is_checked)
+                if(box_one_is_checked && box_two_is_checked && box_four_is_checked && !box_three_is_Checked)
                 {counter += 1;}
 
                 //editText check
-                String name = text.getText().toString();
+                String name = text.getText().toString().trim();
 
                 if(name.equals("sega")) {counter += 1;}
 
@@ -112,6 +113,8 @@ public class MainActivity extends AppCompatActivity
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
+                counter = 0;
 
             }
         });
